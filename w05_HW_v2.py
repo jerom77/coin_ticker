@@ -101,8 +101,8 @@ class MyWindow(QMainWindow, form_class):
         for i, currency in enumerate(currency_list):
             if self.cur_prices[i] is None:
                 # print('%s 현재가 조회 이상 (None)' % currency)
-                self.err_count += 1
-                print('Error Count : %d' % self.err_count)
+                #self.err_count += 1
+                #print('Error Count : %d' % self.err_count)
                 return
             else:
                 price = self.cur_prices[i]
@@ -127,8 +127,8 @@ class MyWindow(QMainWindow, form_class):
                 self.tableWidget.setItem(i, 4, item)
                 
                 
-        self.loop_count += 1
-        print('loop Count : %d' % self.loop_count)
+        #self.loop_count += 1
+        #print('loop Count : %d' % self.loop_count)
             
 
     @pyqtSlot(list)
